@@ -1,0 +1,764 @@
+{
+  "version": 2,
+  "updated": "2026-10-31",
+  "note": "База сигнатур FilonisChecker для SafiMine. Чекер скачивает её с safimine.ru/checker/signatures.json при каждом запуске, так что детекты обновляются без пересборки программы.",
+  "clients": [
+    {
+      "name": "Wurst",
+      "packages": [
+        "net/wurstclient/"
+      ],
+      "strings": [
+        "WurstClient",
+        "wurstclient.net"
+      ]
+    },
+    {
+      "name": "Meteor Client",
+      "packages": [
+        "meteordevelopment/meteorclient/"
+      ],
+      "strings": [
+        "meteorclient.com",
+        "MeteorClient"
+      ]
+    },
+    {
+      "name": "LiquidBounce",
+      "packages": [
+        "net/ccbluex/liquidbounce/",
+        "net/ccbluex/"
+      ],
+      "strings": [
+        "LiquidBounce",
+        "CCBlueX"
+      ]
+    },
+    {
+      "name": "Impact",
+      "packages": [
+        "com/impactclient/",
+        "me/zero/clarinet/"
+      ],
+      "strings": [
+        "impactclient.net",
+        "ImpactClient"
+      ]
+    },
+    {
+      "name": "Aristois",
+      "packages": [
+        "me/deftware/aristois/",
+        "com/aristois/"
+      ],
+      "strings": [
+        "aristois.net",
+        "Aristois"
+      ]
+    },
+    {
+      "name": "Sigma",
+      "packages": [
+        "info/sigmaclient/",
+        "com/mentalfrostbyte/"
+      ],
+      "strings": [
+        "SigmaClient",
+        "sigmaclient.info",
+        "Jello for Sigma"
+      ]
+    },
+    {
+      "name": "Future",
+      "packages": [
+        "net/futureclient/"
+      ],
+      "strings": [
+        "futureclient.net"
+      ]
+    },
+    {
+      "name": "RusherHack",
+      "packages": [
+        "org/rusherhack/"
+      ],
+      "strings": [
+        "rusherhack.org"
+      ]
+    },
+    {
+      "name": "Konas",
+      "packages": [
+        "me/darki/konas/"
+      ],
+      "strings": [
+        "Konas"
+      ]
+    },
+    {
+      "name": "Phobos",
+      "packages": [
+        "me/earth/phobos/"
+      ],
+      "strings": [
+        "Phobos.eu"
+      ]
+    },
+    {
+      "name": "SalHack",
+      "packages": [
+        "me/ionar/salhack/"
+      ],
+      "strings": [
+        "SalHack"
+      ]
+    },
+    {
+      "name": "KAMI / KAMI Blue",
+      "packages": [
+        "me/zeroeightsix/kami/",
+        "org/kamiblue/"
+      ],
+      "strings": [
+        "KAMI Blue"
+      ]
+    },
+    {
+      "name": "Lambda",
+      "packages": [
+        "com/lambda/client/"
+      ],
+      "strings": [
+        "lambda-client"
+      ]
+    },
+    {
+      "name": "ThunderHack",
+      "packages": [
+        "thunder/hack/",
+        "dev/thunderhack/"
+      ],
+      "strings": [
+        "ThunderHack"
+      ]
+    },
+    {
+      "name": "BleachHack",
+      "packages": [
+        "org/bleachhack/",
+        "bleach/hack/"
+      ],
+      "strings": [
+        "BleachHack"
+      ]
+    },
+    {
+      "name": "Coffee Client",
+      "packages": [
+        "coffee/client/"
+      ],
+      "strings": [
+        "Coffee Client"
+      ]
+    },
+    {
+      "name": "Inertia",
+      "packages": [
+        "com/inertiaclient/"
+      ],
+      "strings": [
+        "inertiaclient"
+      ]
+    },
+    {
+      "name": "Boze",
+      "packages": [
+        "dev/boze/"
+      ],
+      "strings": [
+        "boze.dev"
+      ]
+    },
+    {
+      "name": "Doomsday",
+      "packages": [],
+      "strings": [
+        "doomsdayclient",
+        "DoomsDay Client",
+        "doomsday.pw"
+      ]
+    },
+    {
+      "name": "Celestial",
+      "packages": [
+        "celestial/",
+        "ru/celestial/"
+      ],
+      "strings": [
+        "celestial.dev",
+        "Celestial Client",
+        "celestialclient"
+      ]
+    },
+    {
+      "name": "Nursultan",
+      "packages": [
+        "nursultan/",
+        "ru/nursultan/",
+        "im/nursultan/"
+      ],
+      "strings": [
+        "nursultan",
+        "Nursultan"
+      ]
+    },
+    {
+      "name": "Wexside",
+      "packages": [
+        "wexside/",
+        "ru/wexside/"
+      ],
+      "strings": [
+        "wexside",
+        "wexide"
+      ]
+    },
+    {
+      "name": "Akrien",
+      "packages": [
+        "akrien/"
+      ],
+      "strings": [
+        "akrien"
+      ]
+    },
+    {
+      "name": "DeadCode",
+      "packages": [
+        "deadcode/"
+      ],
+      "strings": [
+        "deadcode.club",
+        "DeadCode Client"
+      ]
+    },
+    {
+      "name": "Expensive",
+      "packages": [
+        "expensive/",
+        "im/expensive/"
+      ],
+      "strings": [
+        "expensiveclient",
+        "Expensive Client"
+      ]
+    },
+    {
+      "name": "Delta",
+      "packages": [
+        "deltaclient/"
+      ],
+      "strings": [
+        "deltaclient",
+        "Delta Client"
+      ]
+    },
+    {
+      "name": "Minced",
+      "packages": [
+        "minced/",
+        "ru/minced/"
+      ],
+      "strings": [
+        "mincedclient",
+        "Minced Client"
+      ]
+    },
+    {
+      "name": "Zamorozka",
+      "packages": [
+        "zamorozka/",
+        "ru/zamorozka/"
+      ],
+      "strings": [
+        "zamorozka"
+      ]
+    },
+    {
+      "name": "Wild",
+      "packages": [
+        "wildclient/"
+      ],
+      "strings": [
+        "wildclient",
+        "Wild Client"
+      ]
+    },
+    {
+      "name": "NeverHook",
+      "packages": [
+        "neverhook/"
+      ],
+      "strings": [
+        "neverhook"
+      ]
+    },
+    {
+      "name": "Rockstar",
+      "packages": [
+        "rockstar/client/"
+      ],
+      "strings": [
+        "rockstarclient",
+        "Rockstar Client"
+      ]
+    },
+    {
+      "name": "Excellent",
+      "packages": [
+        "excellent/client/"
+      ],
+      "strings": [
+        "excellentclient"
+      ]
+    },
+    {
+      "name": "Arbuz",
+      "packages": [
+        "arbuz/"
+      ],
+      "strings": [
+        "arbuzclient"
+      ]
+    },
+    {
+      "name": "Monoton",
+      "packages": [
+        "monoton/"
+      ],
+      "strings": [
+        "monotonclient"
+      ]
+    },
+    {
+      "name": "Venus",
+      "packages": [
+        "venus/client/"
+      ],
+      "strings": [
+        "venusclient"
+      ]
+    },
+    {
+      "name": "Essence",
+      "packages": [
+        "essence/client/"
+      ],
+      "strings": [
+        "essenceclient"
+      ]
+    },
+    {
+      "name": "Fluger",
+      "packages": [
+        "fluger/"
+      ],
+      "strings": [
+        "flugerclient"
+      ]
+    },
+    {
+      "name": "Catlavan",
+      "packages": [
+        "catlavan/"
+      ],
+      "strings": [
+        "catlavan"
+      ]
+    },
+    {
+      "name": "Haruka",
+      "packages": [
+        "haruka/"
+      ],
+      "strings": [
+        "harukaclient"
+      ]
+    },
+    {
+      "name": "Vape",
+      "packages": [
+        "manthe/",
+        "gg/vape/"
+      ],
+      "strings": [
+        "vape.gg",
+        "VapeV4",
+        "Vape Lite"
+      ]
+    },
+    {
+      "name": "Baritone",
+      "packages": [
+        "baritone/"
+      ],
+      "strings": [
+        "baritone.api"
+      ]
+    }
+  ],
+  "mods": [
+    {
+      "name": "Freecam",
+      "rule": "3.2",
+      "packages": [
+        "net/xolt/freecam/",
+        "freecam/"
+      ],
+      "strings": [
+        "freecam"
+      ]
+    },
+    {
+      "name": "X-Ray",
+      "rule": "3.2",
+      "packages": [
+        "pro/mikey/xray/",
+        "com/xray/",
+        "xray/"
+      ],
+      "strings": [
+        "xray.json",
+        "XRay Mod",
+        "advanced-xray"
+      ]
+    },
+    {
+      "name": "Hitbox / Reach",
+      "rule": "3.2",
+      "packages": [],
+      "strings": [
+        "hitboxExpanded",
+        "expandEntityHitbox",
+        "expandAllHitboxes",
+        "extendedReach",
+        "HitboxExpander",
+        "reachExtender"
+      ]
+    },
+    {
+      "name": "ChestESP / подсветка",
+      "rule": "3.2",
+      "packages": [
+        "net/entityoutliner/",
+        "chestesp/"
+      ],
+      "strings": [
+        "chestesp",
+        "storageesp",
+        "entityoutliner"
+      ]
+    },
+    {
+      "name": "Fullbright",
+      "rule": "3.2",
+      "packages": [
+        "fullbright/",
+        "gammautils/"
+      ],
+      "strings": [
+        "fullbright",
+        "gammaOverride"
+      ]
+    },
+    {
+      "name": "AutoTotem",
+      "rule": "3.2",
+      "packages": [
+        "autototem/"
+      ],
+      "strings": [
+        "autototem",
+        "AutoTotem"
+      ]
+    },
+    {
+      "name": "Clicker / AutoAttack",
+      "rule": "3.2",
+      "packages": [
+        "autoclicker/",
+        "autoattack/"
+      ],
+      "strings": [
+        "autoclicker",
+        "AutoClicker",
+        "autoAttack"
+      ]
+    },
+    {
+      "name": "Elytra / Armor swap",
+      "rule": "3.2",
+      "packages": [
+        "elytraswap/"
+      ],
+      "strings": [
+        "ElytraSwap",
+        "ArmorHotSwap"
+      ]
+    },
+    {
+      "name": "Baritone",
+      "rule": "3.2",
+      "packages": [
+        "baritone/"
+      ],
+      "strings": [
+        "baritone"
+      ]
+    }
+  ],
+  "modules": {
+    "strong": [
+      "KillAura",
+      "AttackAura",
+      "TriggerBot",
+      "AimBot",
+      "AimAssist",
+      "AutoCrystal",
+      "CrystalAura",
+      "AnchorAura",
+      "BedAura",
+      "AutoTotem",
+      "ChestESP",
+      "StorageESP",
+      "PlayerESP",
+      "EntityESP",
+      "Tracers",
+      "Scaffold",
+      "ChestStealer",
+      "InventoryMove",
+      "NoFall",
+      "AntiKnockback",
+      "NoSlowdown",
+      "NoSlow",
+      "Criticals",
+      "TargetStrafe",
+      "PacketFly",
+      "BoatFly",
+      "FastBow",
+      "BowAimbot",
+      "AutoPot",
+      "AutoWeb",
+      "AutoTrap",
+      "SelfTrap",
+      "Surround",
+      "Nuker",
+      "FakeLag",
+      "Blink",
+      "SpinBot",
+      "ShiftTap",
+      "WTap",
+      "AutoArmor",
+      "XRay",
+      "Freecam",
+      "WallHack",
+      "HitBox",
+      "Reach",
+      "Velocity",
+      "Phase",
+      "Spider",
+      "Jesus",
+      "SafeWalk",
+      "AutoClicker",
+      "FastPlace",
+      "FastEat",
+      "Strafe",
+      "Flight",
+      "Speed",
+      "Timer"
+    ],
+    "ambiguous": [
+      "Reach",
+      "Velocity",
+      "Phase",
+      "Spider",
+      "Jesus",
+      "Strafe",
+      "Flight",
+      "Speed",
+      "Timer",
+      "HitBox",
+      "FastPlace",
+      "FastEat",
+      "SafeWalk",
+      "Blink",
+      "XRay",
+      "Freecam"
+    ],
+    "dangerous_at": 5,
+    "suspicious_at": 3
+  },
+  "obfuscators": [
+    "ZKM",
+    "Zelix KlassMaster",
+    "Allatori",
+    "Branchlock",
+    "Skidfuscator",
+    "Paramorphism",
+    "superblaubeere27",
+    "qProtect",
+    "binsecure",
+    "JNIC",
+    "Bozar",
+    "Radon Obfuscator",
+    "Caesium Obfuscator",
+    "Stringer Java Obfuscator"
+  ],
+  "allowed": {
+    "ids": [
+      "sodium",
+      "lithium",
+      "iris",
+      "phosphor",
+      "ferritecore",
+      "starlight",
+      "optifine",
+      "optifabric",
+      "xaerominimap",
+      "xaeroworldmap",
+      "xaerominimapfair",
+      "appleskin",
+      "shulkerboxtooltip",
+      "shulkerboxviewer",
+      "replaymod",
+      "neat",
+      "healthbar",
+      "damageindicators",
+      "customcrosshair",
+      "tapemouse",
+      "marlowcrystal",
+      "marlow_crystal_optimizer",
+      "crystaloptimizer",
+      "enderpearloptimizer",
+      "fastexp",
+      "armorstatushud",
+      "statuseffecthud",
+      "fabric-api",
+      "fabric",
+      "fabricloader",
+      "modmenu",
+      "cloth-config",
+      "cloth_config",
+      "cloth-config2",
+      "architectury",
+      "indium",
+      "krypton",
+      "lazydfu",
+      "entityculling",
+      "modernfix",
+      "immediatelyfast",
+      "moreculling",
+      "dynamicfps",
+      "betterf3",
+      "zoomify",
+      "continuity",
+      "cit-resewn",
+      "animatica",
+      "chat_heads",
+      "voicechat",
+      "asteria",
+      "asteriabridge"
+    ],
+    "names": [
+      "Sodium",
+      "Lithium",
+      "Iris",
+      "OptiFine",
+      "Xaero",
+      "AppleSkin",
+      "ReplayMod",
+      "Neat",
+      "FerriteCore"
+    ]
+  },
+  "warn_ids": {
+    "inventoryprofilesnext": "Inventory Profiles Next разрешён только без авто-сортировки с преимуществом (п. 3.2)",
+    "itemscroller": "Item Scroller — запрещены нелегитимные режимы (п. 3.2)",
+    "mousewheelie": "Mouse Wheelie — запрещён абуз (п. 3.2)",
+    "litematica": "Litematica — запрещены Easy Place / AutoBuild (п. 3.2)",
+    "schematica": "Schematica — запрещён режим принта (п. 3.2)",
+    "tweakeroo": "Tweakeroo содержит запрещённые функции (FastPlace, FreeCam и др.) — проверьте настройки",
+    "wurst": "Wurst — чит-клиент"
+  },
+  "processes": [
+    "cheatengine",
+    "extremeinjector",
+    "xenos64",
+    "xenos.exe",
+    "dllinjector",
+    "celestial",
+    "nursultan",
+    "wexside",
+    "akrien",
+    "deadcode",
+    "zamorozka",
+    "wildclient",
+    "neverhook",
+    "doomsday",
+    "liquidbounce",
+    "meteor-client",
+    "wurstclient",
+    "mincedclient",
+    "expensiveclient"
+  ],
+  "cleaners": [
+    "ccleaner",
+    "privazer",
+    "bleachbit",
+    "wise disk cleaner",
+    "wisecleaner",
+    "clean master",
+    "usncleaner",
+    "lastactivity cleaner",
+    "shellbag cleaner"
+  ],
+  "pe_strings": [
+    "javaw.exe",
+    "jvm.dll",
+    "JNI_GetCreatedJavaVMs",
+    "net/minecraft/client",
+    "net.minecraft.client",
+    "LWJGL",
+    "lwjgl"
+  ],
+  "pe_inject_imports": [
+    "VirtualAllocEx",
+    "WriteProcessMemory",
+    "CreateRemoteThread",
+    "NtCreateThreadEx",
+    "RtlCreateUserThread",
+    "QueueUserAPC",
+    "SetWindowsHookExA",
+    "SetWindowsHookExW"
+  ],
+  "trace_tokens": [
+    "celestial",
+    "nursultan",
+    "wexside",
+    "akrien",
+    "deadcode",
+    "zamorozka",
+    "wildclient",
+    "neverhook",
+    "doomsday",
+    "liquidbounce",
+    "meteor-client",
+    "wurst",
+    "mincedclient",
+    "expensiveclient",
+    "cheatengine",
+    "extremeinjector",
+    "xenos",
+    "dllinjector"
+  ]
+}
