@@ -1,5 +1,5 @@
 {
- "version": 4,
+ "version": 5,
  "updated": "2026-11-01",
  "note": "База сигнатур SafiChecker для SafiMine. Лежит в программе и на safimine.ru/checker/signatures.json, программа берёт свежую с сайта.",
  "clients": [
@@ -1529,7 +1529,8 @@
    "desc": "при низком здоровье сам кладёт тотем во вторую руку",
    "groups": [
     [
-     "TOTEM_OF_UNDYING"
+     "TOTEM_OF_UNDYING",
+     "TOTEM"
     ],
     [
      "getHeldItemOffhand",
@@ -1543,6 +1544,8 @@
     [
      "windowClick",
      "CClickWindowPacket",
+     "CPacketClickWindow",
+     "C0EPacketClickWindow",
      "handleInventoryMouseClick",
      "ServerboundContainerClickPacket"
     ]
@@ -1555,6 +1558,8 @@
     [
      "attackEntity",
      "CUseEntityPacket",
+     "CPacketUseEntity",
+     "C02PacketUseEntity",
      "ServerboundInteractPacket"
     ],
     [
@@ -1564,6 +1569,10 @@
      "setXRot",
      "CPlayerPacket$RotationPacket",
      "CPlayerPacket$PositionRotationPacket",
+     "CPacketPlayer$Rotation",
+     "CPacketPlayer$PositionRotation",
+     "C03PacketPlayer$C05PacketPlayerLook",
+     "C03PacketPlayer$C06PacketPlayerPosLook",
      "ServerboundMovePlayerPacket$Rot",
      "ServerboundMovePlayerPacket$PosRot"
     ],
@@ -1572,6 +1581,8 @@
      "getEntitiesWithinAABB",
      "entitiesForRendering",
      "getLoadedEntityList",
+     "loadedEntityList",
+     "playerEntities",
      "getEntitiesOfClass"
     ]
    ]
@@ -1588,6 +1599,8 @@
     [
      "attackEntity",
      "CUseEntityPacket",
+     "CPacketUseEntity",
+     "C02PacketUseEntity",
      "ServerboundInteractPacket"
     ]
    ]
@@ -1598,13 +1611,18 @@
    "groups": [
     [
      "SEntityVelocityPacket",
+     "SPacketEntityVelocity",
+     "S12PacketEntityVelocity",
      "ClientboundSetEntityMotionPacket",
      "SExplosionPacket",
+     "SPacketExplosion",
+     "S27PacketExplosion",
      "ClientboundExplodePacket"
     ],
     [
      "setCancel",
      "setCanceled",
+     "setCancelled",
      "cancel"
     ]
    ]
@@ -1614,13 +1632,16 @@
    "desc": "увеличивает хитбоксы других игроков",
    "groups": [
     [
-     "setBoundingBox"
+     "setBoundingBox",
+     "setEntityBoundingBox"
     ],
     [
      "PlayerEntity",
+     "EntityPlayer",
      "RemotePlayer",
      "AbstractClientPlayer",
-     "RemoteClientPlayerEntity"
+     "RemoteClientPlayerEntity",
+     "EntityOtherPlayerMP"
     ]
    ]
   },
@@ -1630,17 +1651,24 @@
    "groups": [
     [
      "isHandActive",
-     "isUsingItem"
+     "isUsingItem",
+     "isEating",
+     "isBlocking"
     ],
     [
      "CPlayerTryUseItemPacket",
+     "CPacketPlayerTryUseItem",
+     "C08PacketPlayerBlockPlacement",
      "CHeldItemChangePacket",
+     "CPacketHeldItemChange",
+     "C09PacketHeldItemChange",
      "ServerboundUseItemPacket",
      "ServerboundSetCarriedItemPacket"
     ],
     [
      "setCancel",
      "setCanceled",
+     "setCancelled",
      "cancel"
     ]
    ]
@@ -1651,8 +1679,11 @@
    "groups": [
     [
      "CPlayerTryUseItemOnBlockPacket",
+     "CPacketPlayerTryUseItemOnBlock",
+     "C08PacketPlayerBlockPlacement",
      "ServerboundUseItemOnPacket",
      "processRightClickBlock",
+     "onPlayerRightClick",
      "rightClickBlock",
      "useItemOn"
     ],
@@ -1663,13 +1694,41 @@
      "setXRot",
      "CPlayerPacket$RotationPacket",
      "CPlayerPacket$PositionRotationPacket",
+     "CPacketPlayer$Rotation",
+     "CPacketPlayer$PositionRotation",
+     "C03PacketPlayer$C05PacketPlayerLook",
+     "C03PacketPlayer$C06PacketPlayerPosLook",
      "ServerboundMovePlayerPacket$Rot",
      "ServerboundMovePlayerPacket$PosRot"
     ],
     [
      "getMotion",
      "getDeltaMovement",
-     "moveForward"
+     "moveForward",
+     "motionX"
+    ]
+   ]
+  },
+  {
+   "name": "Reach",
+   "desc": "бьёт дальше разрешённой дистанции",
+   "groups": [
+    [
+     "getBlockReachDistance",
+     "getEntityReachDistance",
+     "getPickRange"
+    ],
+    [
+     "getMouseOver",
+     "pick",
+     "rayTrace"
+    ],
+    [
+     "attackEntity",
+     "CUseEntityPacket",
+     "CPacketUseEntity",
+     "C02PacketUseEntity",
+     "ServerboundInteractPacket"
     ]
    ]
   }
