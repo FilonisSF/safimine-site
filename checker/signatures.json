@@ -1,5 +1,5 @@
 {
- "version": 3,
+ "version": 4,
  "updated": "2026-11-01",
  "note": "База сигнатур SafiChecker для SafiMine. Лежит в программе и на safimine.ru/checker/signatures.json, программа берёт свежую с сайта.",
  "clients": [
@@ -1252,18 +1252,14 @@
   "anydesk",
   "teamviewer",
   "rustdesk",
-  "discord",
-  "obs64",
   "obs32",
   "gamebar",
   "rtss",
   "rtsshooks64",
   "rtsshooks",
   "msiafterburner",
-  "steam",
   "steamwebhelper",
   "epicgameslauncher",
-  "nvcontainer",
   "overwolf",
   "medal",
   "ditto",
@@ -1279,13 +1275,7 @@
   "electron",
   "code",
   "claude",
-  "chrome",
-  "msedge",
-  "firefox",
-  "opera",
-  "yandex",
   "browser",
-  "telegram",
   "ayugram"
  ],
  "client_dirs": [
@@ -1532,5 +1522,183 @@
   "cheatnetwork",
   "wildclient",
   "evaders."
- ]
+ ],
+ "behaviors": [
+  {
+   "name": "AutoTotem",
+   "desc": "при низком здоровье сам кладёт тотем во вторую руку",
+   "groups": [
+    [
+     "TOTEM_OF_UNDYING"
+    ],
+    [
+     "getHeldItemOffhand",
+     "getOffhandItem"
+    ],
+    [
+     "getHealth"
+    ]
+   ],
+   "jar_groups": [
+    [
+     "windowClick",
+     "CClickWindowPacket",
+     "handleInventoryMouseClick",
+     "ServerboundContainerClickPacket"
+    ]
+   ]
+  },
+  {
+   "name": "KillAura",
+   "desc": "перебирает сущности вокруг, поворачивает камеру и бьёт",
+   "groups": [
+    [
+     "attackEntity",
+     "CUseEntityPacket",
+     "ServerboundInteractPacket"
+    ],
+    [
+     "rotationYaw",
+     "rotationPitch",
+     "setYRot",
+     "setXRot",
+     "CPlayerPacket$RotationPacket",
+     "CPlayerPacket$PositionRotationPacket",
+     "ServerboundMovePlayerPacket$Rot",
+     "ServerboundMovePlayerPacket$PosRot"
+    ],
+    [
+     "getAllEntities",
+     "getEntitiesWithinAABB",
+     "entitiesForRendering",
+     "getLoadedEntityList",
+     "getEntitiesOfClass"
+    ]
+   ]
+  },
+  {
+   "name": "TriggerBot",
+   "desc": "сам бьёт сущность под прицелом",
+   "groups": [
+    [
+     "objectMouseOver",
+     "crosshairTarget",
+     "pointedEntity"
+    ],
+    [
+     "attackEntity",
+     "CUseEntityPacket",
+     "ServerboundInteractPacket"
+    ]
+   ]
+  },
+  {
+   "name": "Velocity",
+   "desc": "отменяет отбрасывание от ударов и взрывов",
+   "groups": [
+    [
+     "SEntityVelocityPacket",
+     "ClientboundSetEntityMotionPacket",
+     "SExplosionPacket",
+     "ClientboundExplodePacket"
+    ],
+    [
+     "setCancel",
+     "setCanceled",
+     "cancel"
+    ]
+   ]
+  },
+  {
+   "name": "HitBox",
+   "desc": "увеличивает хитбоксы других игроков",
+   "groups": [
+    [
+     "setBoundingBox"
+    ],
+    [
+     "PlayerEntity",
+     "RemotePlayer",
+     "AbstractClientPlayer",
+     "RemoteClientPlayerEntity"
+    ]
+   ]
+  },
+  {
+   "name": "NoSlow",
+   "desc": "убирает замедление при еде и блоке щитом",
+   "groups": [
+    [
+     "isHandActive",
+     "isUsingItem"
+    ],
+    [
+     "CPlayerTryUseItemPacket",
+     "CHeldItemChangePacket",
+     "ServerboundUseItemPacket",
+     "ServerboundSetCarriedItemPacket"
+    ],
+    [
+     "setCancel",
+     "setCanceled",
+     "cancel"
+    ]
+   ]
+  },
+  {
+   "name": "Scaffold",
+   "desc": "сам ставит блоки под ноги с поворотом камеры",
+   "groups": [
+    [
+     "CPlayerTryUseItemOnBlockPacket",
+     "ServerboundUseItemOnPacket",
+     "processRightClickBlock",
+     "rightClickBlock",
+     "useItemOn"
+    ],
+    [
+     "rotationYaw",
+     "rotationPitch",
+     "setYRot",
+     "setXRot",
+     "CPlayerPacket$RotationPacket",
+     "CPlayerPacket$PositionRotationPacket",
+     "ServerboundMovePlayerPacket$Rot",
+     "ServerboundMovePlayerPacket$PosRot"
+    ],
+    [
+     "getMotion",
+     "getDeltaMovement",
+     "moveForward"
+    ]
+   ]
+  }
+ ],
+ "pe_masquerade": {
+  "mozilla": "Mozilla Firefox",
+  "firefox": "Mozilla Firefox",
+  "chrome": "Google Chrome",
+  "googlechrome": "Google Chrome",
+  "msedge": "Microsoft Edge",
+  "opera": "Opera",
+  "yandex": "Яндекс Браузер",
+  "discord": "Discord",
+  "steam": "Steam",
+  "telegram": "Telegram",
+  "svchost": "Windows",
+  "explorer": "Windows",
+  "runtimebroker": "Windows",
+  "dwm": "Windows",
+  "csrss": "Windows",
+  "lsass": "Windows",
+  "java": "Java",
+  "javaw": "Java",
+  "nvidia": "NVIDIA",
+  "nvcontainer": "NVIDIA",
+  "obs64": "OBS",
+  "spotify": "Spotify",
+  "minecraft": "Minecraft",
+  "minecraftlauncher": "Minecraft Launcher",
+  "tlauncher": "TLauncher"
+ }
 }
