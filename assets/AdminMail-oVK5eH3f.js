@@ -1,4 +1,4 @@
-import{i as I,r as d,s as m,g as L,j as e,I as o,t as U}from"./index-CGhxbOeR.js";const C=`<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><title>Добро пожаловать на SafiMine!</title></head>\r
+import{i as I,r as d,s as m,g as L,j as e,I as o,t as U}from"./index-CEv6KMLX.js";const C=`<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><title>Добро пожаловать на SafiMine!</title></head>\r
 <body style="margin:0;padding:0;background:#020b0d">\r
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#020b0d;background-image:radial-gradient(ellipse at 80% 0%,rgba(53,230,255,.16),transparent 60%)">\r
 <tr><td align="center" style="padding:32px 14px">\r
